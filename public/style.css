@@ -53,3 +53,80 @@ header nav ul li a{
 header nav ul li a:hover{
     color:#1cff91;
 }
+
+.showcase{
+    text-align:center;
+    margin-top:10%;
+}
+
+.showcase h1{
+    font-size: 50px;
+}
+
+.showcase p{
+    font-size: 20px;
+    padding-top:15px;
+}
+
+.showcase a {
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    padding:10px 40px;
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #111;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.showcase a:hover{
+    box-shadow: none;
+    background-color: #333;
+    color: #fc0000;
+}
+
+.add-container{
+    width:90%;
+    margin:auto;
+}
+
+.add{
+    background-color: #222;
+    width:20%;
+    height:30%;
+    overflow:hidden;
+    margin-top:4%;
+    border-radius:10px;
+    display:flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    align-items: right;
+}
+
+.add button{
+    display:inline-block;
+    text-decoration: none;
+    padding:10px 30px;
+    background-color: #1cff91;
+    font-weight: bold;
+    color:#333;
+    transition:0.3s;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.add button:hover{
+    background-color: #111;
+    color:#fff;
+}
+
+.add p{
+   
+    font-weight: bold;
+}
+
+button{
+    color: #000000;
+}

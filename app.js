@@ -1,8 +1,8 @@
 const express = require('express');
 
 const app = express();
-//routing 
 
+//routing 
 //set templating as ejs
 app.set('view engine', 'ejs')
 
@@ -21,8 +21,6 @@ app.get('/front', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help')
 });
-
-
 
 
 //create a server 
