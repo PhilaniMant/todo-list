@@ -1,0 +1,16 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "a small program for tasks",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodeman app"
+  },
+  "author": "lanies",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
