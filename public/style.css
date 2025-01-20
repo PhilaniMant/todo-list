@@ -3,7 +3,6 @@
     padding:0;
     box-sizing: border-box;
     font-family: Arial;
-
 }
 
 
@@ -127,6 +126,72 @@ header nav ul li a:hover{
     font-weight: bold;
 }
 
-button{
+button a{
     color: #000000;
+    text-align: right;
+}
+
+.add-to-container{
+    width:60%;
+    margin:auto;
+    margin-top:4%;
+    background-color: #222;
+    padding:50px 30px;
+    border-radius: 10px;
+}
+
+.todo h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input{
+width: 100%;
+padding :10px;
+margin-bottom: 15px;
+}
+
+textarea{
+    width: 100%;
+    padding :10px;
+}
+
+button{
+
+}
+
+.add-to-container form{
+    margin-top:3%;
+}
+
+.add-to-container > .to-do{
+    margin-bottom: 25px;
+}
+
+.add-container > .to-do > input[type="text"] ,.add-to-container > .to-do >textarea{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    outline:none;
+    border:none;
+    margin-top:5px;
+}
+
+
+.add-to-container > input[type="submit"],.diary-container >a{
+    display: inline-block;
+    text-decoration: none;
+    background-color:#1cff91;
+    padding:10px 40px;
+    border:none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-sizing: 2px 2px 4px #111;
+    color:#333;
+    transition:0.5s;
+}
+
+.add-to-container form > input[type="submit"]:hover{
+    background-color: #fff;
+    padding:10px 36px;
 }
