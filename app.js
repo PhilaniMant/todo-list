@@ -21,6 +21,9 @@ mongoose.connect(url,{
 }).then(console.log("Mongo DB Connected"))
 .catch( err => console.log(err));
 
+//import task model
+const task = require('./models/tasks');
+
 //static files
 app.use(express.static('public'));
 
@@ -45,7 +48,17 @@ app.get('/ADD',(req,res)=>{
 
 //ROUTE FOR SAVING DATA
 app.post('/add-tasks',(req, res)=>{
-    res.send(req.body)
+
+    //save data on database
+    const data = new task({
+       title:req.body.title,
+       description:req.body.description
+    })
+
+    data.save().then(()=>{
+        res.redirect('/tasks');
+    }).catch(err =>console.log(err));
+
 })
 
 //create a server 
